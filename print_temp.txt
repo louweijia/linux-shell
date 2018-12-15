@@ -1,0 +1,34 @@
+查看temp2.txt文件:
+apple
+apple
+Orange
+orange
+apple
+cherries
+cherries
+Persimmaon
+%%apple
+12banana
+苹果
+苹果
+1:2:3
+1:2
+
+pr打印temp2.txt文件到print.outfile文件:
+添加标题-h（-t可以不显示标题）、分栏-cxx(或-xx xx表示具体分栏数)、设置每页的行数(默认66)-l.
+
+
+2018-12-14 15:26                  测试文档打印                   第 1 页
+
+
+apple	    orange	cherries    %%apple	\350\213    1:2:3
+apple	    apple	Persimmaon  12banana	\350\213    1:2
+Orange	    cherries
+
+
+
+
+
+
+
+

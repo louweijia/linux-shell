@@ -1,0 +1,66 @@
+查看temp2.txt文件:
+apple
+apple
+Orange
+orange
+apple
+cherries
+cherries
+Persimmaon
+%%apple
+12banana
+苹果
+苹果
+1:2:3
+1:2
+
+排序去重，忽略大小写-f、去除重复项(根据-k中的匹配字段去重)-u:
+1:2
+苹果
+1:2:3
+apple
+Orange
+Persimmaon
+12banana
+%%apple
+cherries
+
+去重，使用uniq指令，其只能去除相邻行的重复数据，如下:
+apple
+Orange
+orange
+apple
+cherries
+Persimmaon
+%%apple
+12banana
+苹果
+1:2:3
+1:2
+
+先用sort排序然后使用uniq指令去重，显示重复次数-c，如下:
+      1 1:2
+      1 1:2:3
+      1 12banana
+      3 apple
+      1 %%apple
+      2 cherries
+      1 orange
+      1 Orange
+      1 Persimmaon
+      2 苹果
+
+先用sort排序然后使用uniq指令去重，显示重复次数-c，只显示重复行-d，如下:
+      3 apple
+      2 cherries
+      2 苹果
+
+先用sort排序然后使用uniq指令去重，只不显示重复行-u，如下:
+1:2
+1:2:3
+12banana
+%%apple
+orange
+Orange
+Persimmaon
+
